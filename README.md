@@ -1,6 +1,6 @@
 # Machine Learning Final Project - Santander
 
-**Final Project (Grade 95, M.Sc. Data Science, HIT). An advanced binary classification project focused on predicting future customer transactions for Banco Santander. This project was defended in an oral exam and achieved a high score for its complexity and analytical depth.**
+**Final Project (Grade 95, M.Sc. Data Science, HIT). An advanced binary classification project focused on predicting future customer transactions for the [Banco Santander Kaggle Competition](https://www.kaggle.com/competitions/santander-customer-transaction-prediction/overview). This project was defended in an oral exam and achieved a high score for its complexity and analytical depth.**
 
 ## Overview
 The goal of this project is to identify which customers will make a specific transaction in the future, irrespective of the amount. The challenge involves dealing with anonymous numerical features and a highly imbalanced dataset (only 10% target rate), requiring sophisticated feature engineering and robust model evaluation.
@@ -25,4 +25,4 @@ The goal of this project is to identify which customers will make a specific tra
 - `kaggle_score.png`: Screenshot of the model's evaluation score.
 
 ## Dataset
-Due to size constraints (over 200MB), the raw `train.csv` and `test.csv` files are not included in this repository. They can be downloaded directly from the [Kaggle Competition Page](https://www.kaggle.com/competitions/santander-customer-transaction-prediction/data).
+Due to size constraints (over 200MB), the raw `train.csv` and `test.csv` files are not included in this repository. They can be downloaded directly from the [Kaggle Competition Data Page](https://www.kaggle.com/competitions/santander-customer-transaction-prediction/data).
