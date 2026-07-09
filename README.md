@@ -14,12 +14,10 @@ The goal of this project is to identify which customers will make a specific tra
 - **Metric:** AUC-ROC (Area Under the ROC Curve)
 ## Repository Structure
 - `Santander_Transaction_Prediction_Final.ipynb`: Full end-to-end implementation (EDA, Feature Engineering, Modeling, Evaluation).
-- `train.csv` / `test.csv`: The raw competition datasets (stored via Git LFS).
+- `train.csv` / `test.csv`: The raw competition datasets.
 - `Final_Project_Instructions.pdf`: The official project requirements and guidelines.
 - `submission_santander.csv`: Final predictions submitted for evaluation.
 - `sample_submission.csv`: Reference format for Kaggle submissions.
 - `kaggle_score.png`: Screenshot of the model's evaluation score.
 ## Dataset
-The raw `train.csv` and `test.csv` files (~288MB each) are included in this repository, stored via **Git LFS** (Large File Storage) due to their size. To fetch them after cloning, make sure Git LFS is installed (`git lfs install`) and run `git lfs pull`.
-
-The dataset originates from the [Santander Customer Transaction Prediction](https://www.kaggle.com/competitions/santander-customer-transaction-prediction/data) Kaggle competition, where it can also be downloaded directly.
+The dataset consists of the `train.csv` and `test.csv` files included in this repository. It originates from the [Santander Customer Transaction Prediction](https://www.kaggle.com/competitions/santander-customer-transaction-prediction/data) Kaggle competition, where it can also be downloaded directly.
