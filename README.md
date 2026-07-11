@@ -22,6 +22,3 @@ AUC **0.894** validation / **0.859** Kaggle private leaderboard — a modest 0.0
 - **`train.csv` / `test.csv`**: The official competition datasets (via Git LFS).
 - **`sample_submission.csv` / `submission_santander.csv`**: Submission template and final predictions.
 - **`kaggle_score.png`**: Official Kaggle leaderboard score screenshot.
-
-***
-*Course: Machine Learning, M.Sc. Data Science, HIT · Python, Pandas, NumPy, Scikit-learn, CatBoost*
