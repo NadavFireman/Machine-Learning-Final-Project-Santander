@@ -11,7 +11,7 @@
 
 ## Results
 
-**AUC 0.894 validation / 0.859 Kaggle private leaderboard** — near-identical held-out performance, a stable model with no overfitting.
+AUC **0.894** validation / **0.859** Kaggle private leaderboard — a modest 0.035 generalization gap on the competition's fully unseen test set.
 
 ![Kaggle Score](kaggle_score.png)
 
