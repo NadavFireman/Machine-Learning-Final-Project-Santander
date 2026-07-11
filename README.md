@@ -1,23 +1,24 @@
-# Machine Learning Final Project - Santander
-**Final Project (Grade 95, M.Sc. Data Science, HIT). An advanced binary classification project focused on predicting future customer transactions for the [Banco Santander Kaggle Competition](https://www.kaggle.com/competitions/santander-customer-transaction-prediction/overview). This project was defended in an oral exam and achieved a high score for its complexity and analytical depth.**
-## Overview
-The goal of this project is to identify which customers will make a specific transaction in the future, irrespective of the amount. The challenge involves dealing with anonymous numerical features and a highly imbalanced dataset (only 10% target rate), requiring sophisticated feature engineering and robust model evaluation.
+# Machine Learning - Santander Transaction Prediction (Final Project)
+
+**Final Project (Grade 95, M.Sc. Data Science, HIT). Binary classification of customer transactions on the [Santander Kaggle competition](https://www.kaggle.com/c/santander-customer-transaction-prediction) — 200,000 records, 200 anonymized features, 9:1 class imbalance (hence AUC-ROC as the target metric).**
+
 ## Key Features
-- **Extensive Feature Engineering:** Expanded the original 200 features by adding **217 new statistical features** (mean, std, skew, kurtosis, etc.). Performed feature selection to create a "Lean Model" using the 65 most impactful features, reducing noise and improving inference speed.
-- **Advanced Modeling with CatBoost:** Selected **CatBoost** as the primary algorithm, outperforming Logistic Regression due to its superior handling of the dataset's unique structure.
-- **Imbalanced Data Strategy:** Focused on **AUC-ROC** as the primary metric (instead of simple accuracy) to effectively capture the minority class.
-- **Model Explainability:** Analysis of feature importance to provide insights into what drives customer transactions.
-## Tech Stack
-- **Language:** Python
-- **Libraries:** CatBoost, Scikit-learn, Pandas, NumPy
-- **Visualization:** Matplotlib, Seaborn
-- **Metric:** AUC-ROC (Area Under the ROC Curve)
+
+- **Feature Engineering at Scale:** 217 statistical features engineered on top of the 200 anonymized originals.
+- **Feature Selection:** Importance-based narrowing to the 65 most impactful — a leaner model that filters statistical noise.
+- **Model Comparison:** CatBoost vs. Logistic Regression baseline, with train/validation/test gap tracking against overfitting.
+- **External Validation:** Final model submitted to Kaggle and scored on the competition's unseen test set.
+
+## Results
+
+**AUC 0.894 validation / 0.859 Kaggle private leaderboard** — near-identical held-out performance, a stable model with no overfitting.
+
 ## Repository Structure
-- `Santander_Transaction_Prediction_Final.ipynb`: Full end-to-end implementation (EDA, Feature Engineering, Modeling, Evaluation).
-- `train.csv` / `test.csv`: The raw competition datasets.
-- `Final_Project_Instructions.pdf`: The official project requirements and guidelines.
-- `submission_santander.csv`: Final predictions submitted for evaluation.
-- `sample_submission.csv`: Reference format for Kaggle submissions.
-- `kaggle_score.png`: Screenshot of the model's evaluation score.
-## Dataset
-The dataset consists of the `train.csv` and `test.csv` files included in this repository. It originates from the [Santander Customer Transaction Prediction](https://www.kaggle.com/competitions/santander-customer-transaction-prediction/data) Kaggle competition, where it can also be downloaded directly.
+
+- **`Santander_Transaction_Prediction_Final.ipynb`**: Full implementation — EDA, feature engineering, selection, modeling, Kaggle submission (Hebrew narrative; code and charts are language-independent).
+- **`Final_Project_Instructions.pdf`**: Original project instructions.
+- **`train.csv` / `test.csv`**: The official competition datasets.
+- **`sample_submission.csv` / `submission_santander.csv`**: Submission template and final predictions.
+
+***
+*Course: Machine Learning, M.Sc. Data Science, HIT · Python, Pandas, NumPy, Scikit-learn, CatBoost*
