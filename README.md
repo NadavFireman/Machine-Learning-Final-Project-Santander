@@ -13,12 +13,15 @@
 
 **AUC 0.894 validation / 0.859 Kaggle private leaderboard** — near-identical held-out performance, a stable model with no overfitting.
 
+![Kaggle Score](kaggle_score.png)
+
 ## Repository Structure
 
 - **`Santander_Transaction_Prediction_Final.ipynb`**: Full implementation — EDA, feature engineering, selection, modeling, Kaggle submission (Hebrew narrative; code and charts are language-independent).
 - **`Final_Project_Instructions.pdf`**: Original project instructions.
-- **`train.csv` / `test.csv`**: The official competition datasets.
+- **`train.csv` / `test.csv`**: The official competition datasets (via Git LFS).
 - **`sample_submission.csv` / `submission_santander.csv`**: Submission template and final predictions.
+- **`kaggle_score.png`**: Official Kaggle leaderboard score screenshot.
 
 ***
 *Course: Machine Learning, M.Sc. Data Science, HIT · Python, Pandas, NumPy, Scikit-learn, CatBoost*
